@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FORMLAR</h1>
+    <form action="result.html">
+      <!-- TEXT -->
+      <div>
+        <!--! label ve inputu id for ile bağlayınca label ı tıkla input aktif olsun -->
+        <label for="ad">AD:</label>
+        <input
+          id="ad"
+          type="text"
+          name="isim"
+          value=""
+          placeholder="Lütfen isim giriniz"
+          required
+        />
+        <!--! required:doldurulması zorunlu -->
+        <br />
+        <br />
+        <label for="soyad">SOYAD:</label>
+        <input
+          id="soyad"
+          type="text"
+          name="soyisim"
+          value=""
+          placeholder="Lütfen soyisim giriniz"
+          required
+        />
+      </div>
+      <br />
+      <!--! PASSWORD-->
+      <div>
+        <label for="pass">SOYAD:</label>
+        <input
+          id="pass"
+          type="password"
+          name="password"
+          value=""
+          placeholder="Lütfen password giriniz"
+          minlength="4"
+          maxlength="8"
+          required
+        />
+      </div>
+      <br />
+      <!--! RADIO -->
+      <div>
+        <label for="man">Erkek</label>
+        <input id="man" type="radio" value="erkek" name="cinsiyet" />
+        <label for="woman">Kadin</label>
+        <input id="woman" type="radio" value="kadin" name="cinsiyet" />
+        <label for="none">None</label>
+        <input id="none" type="radio" value="none" name="cinsiyet" checked />
+        <!-- radio= tek biri check edilebilir. checked= ilk render da tikli gelsin -->
+      </div>
+      <!--! CHECKBOX -->
+      <br />
+      <div>
+        <label>LUTFEN FAVARONIZI SECINIZ</label><br />
+        <label for="bmw">BMW</label>
+        <input id="bmw" name="araba1" type="checkbox" value="bmw-clx" />
+        <label for="mer">Mercedes</label>
+        <input id="mer" name="araba2" type="checkbox" value="mercedes" />
+        <label for="audi">Audi</label>
+        <input id="audi" name="araba3" type="checkbox" value="audi" />
+      </div>
+
+      <div><br>
+        <input type="submit" value="Gönder">
+        <!-- <input type="submit" name="" id="">
+        <input type="submit" name="" id=""> -->
+      </div>
+    </form>
+  </body>
+</html>
