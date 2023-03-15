@@ -9,10 +9,11 @@
   <body>
     <h1>FORMLAR</h1>
     <form action="result.html">
-      <!-- TEXT -->
+      <!--! TEXT -->
       <div>
         <!--! label ve inputu id for ile bağlayınca label ı tıkla input aktif olsun -->
         <label for="ad">AD:</label>
+
         <input
           id="ad"
           type="text"
@@ -24,7 +25,8 @@
         <!--! required:doldurulması zorunlu -->
         <br />
         <br />
-        <label for="soyad">SOYAD:</label>
+
+        <label for="soyad"> SOYAD:</label>
         <input
           id="soyad"
           type="text"
@@ -35,9 +37,9 @@
         />
       </div>
       <br />
-      <!--! PASSWORD-->
+      <!--! PASSWORD -->
       <div>
-        <label for="pass">SOYAD:</label>
+        <label for="pass"> PASSWORD:</label>
         <input
           id="pass"
           type="password"
@@ -50,32 +52,160 @@
         />
       </div>
       <br />
-      <!--! RADIO -->
+
+      <!--! RADİO BUTTON -->
       <div>
         <label for="man">Erkek</label>
-        <input id="man" type="radio" value="erkek" name="cinsiyet" />
-        <label for="woman">Kadin</label>
-        <input id="woman" type="radio" value="kadin" name="cinsiyet" />
+        <input id="man" name="cinsiyet" value="erkek" type="radio" />
+
+        <label for="woman">Kadın</label>
+        <input id="woman" name="cinsiyet" value="kadin" type="radio" checked />
+
         <label for="none">None</label>
-        <input id="none" type="radio" value="none" name="cinsiyet" checked />
+        <input id="none" name="cinsiyet" value="none" type="radio" />
         <!-- radio= tek biri check edilebilir. checked= ilk render da tikli gelsin -->
       </div>
-      <!--! CHECKBOX -->
       <br />
+
+      <!--! CHECKBOX -->
       <div>
-        <label>LUTFEN FAVARONIZI SECINIZ</label><br />
+        <label> LÜTFEN FAVORİ ARABANIZI SEÇİNİZ </label> <br />
+
         <label for="bmw">BMW</label>
-        <input id="bmw" name="araba1" type="checkbox" value="bmw-clx" />
-        <label for="mer">Mercedes</label>
-        <input id="mer" name="araba2" type="checkbox" value="mercedes" />
-        <label for="audi">Audi</label>
-        <input id="audi" name="araba3" type="checkbox" value="audi" />
+        <input id="bmw" type="checkbox" name="araba1" value="bmw-clx" />
+
+        <label for="mer">MERCEDES</label>
+        <input id="mer" type="checkbox" name="araba2" value="mercedes" />
+
+        <label for="audi">AUDI</label>
+        <input id="audi" type="checkbox" name="araba3" value="audi-cti" />
+        <!-- checkbox=istediğiniz kadar işaretleyebilirsiniz -->
       </div>
 
-      <div><br>
-        <input type="submit" value="Gönder">
-        <!-- <input type="submit" name="" id="">
-        <input type="submit" name="" id=""> -->
+      <br />
+
+      <!--! NUMBER -->
+
+      <div>
+        <label for="age">YAS</label>
+        <input id="age" type="number" name="yas" value="0" max="100" step="2" />
+      </div>
+      <!-- max=gidebileceği son sayı, step=kaçar kaçar artmalı -->
+      <br />
+
+      <!--! COLOR -->
+
+      <div>
+        <label for="color">RENK</label>
+        <input id="color" type="color" name="renk" />
+      </div>
+      <br />
+
+      <!--! DATE -->
+      <div>
+        <label for="tarih">TARİH</label>
+        <input
+          id="tarih"
+          type="date"
+          min="2000-10-01"
+          max="2023-10-01"
+          name="tarih"
+        />
+      </div>
+      <!-- yıl-ay-gün -->
+      <br />
+
+      <!--! DATE SAATLİ OLAN -->
+      <div>
+        <label for="tarih2">TARİH</label>
+        <input
+          id="tarih2"
+          type="datetime-local"
+          min="2000-10-01"
+          max="2023-10-01"
+          name="tarih2"
+        />
+      </div>
+      <!-- yıl-ay-gün -->
+      <br />
+
+      <!--! EMAIL -->
+
+      <div>
+        <label for="">EMAİL</label>
+        <input type="email" name="email" placeholder="example@gmail.com" />
+      </div>
+      <br />
+
+      <!--! TEL -->
+      <div>
+        <label for="">TELEFON</label>
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          placeholder="555-555-55-55"
+        />
+      </div>
+      <br />
+      <!--! SELECT-OPTGROUP -->
+
+      <div>
+        <label for="tatlı">Hangi tatlıyı Seversiniz</label>
+        <select name="tatlı" id="tatlı">
+          <optgroup label="Şerbetli Tatlılar">
+            <option value="künefe">Künefe</option>
+            <option value="baklava">Baklava</option>
+            <option value="sarma">Sarma</option>
+            <option value="kadayıf">Kadayıf</option>
+          </optgroup>
+
+          <optgroup label="Sütlü Tatlılar">
+            <option value="muhallebi">Muhallebi</option>
+            <option value="kazandibi">Kazandibi</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <br />
+
+      <!--* DATALİST -->
+
+      <div>
+        <label for="marka">Sevdiğiniz Marka</label>
+        <input id="marka" list="markalar" />
+
+        <!--! input list ile datalist in id si aynı olmalı ki liste çıksın -->
+
+        <datalist id="markalar">
+          <option value="Vakko"></option>
+          <option value="Beymen"></option>
+          <option value="Guess"></option>
+          <option value="Lacoste"></option>
+        </datalist>
+      </div>
+
+      <!--! datalist vs select ==>bir gereklilik ile bir öneri arasındaki fark olarak düşünün.  select, kullanıcının vermiş olduğunuz seçeneklerden birini seçmesi gerekir.  datalist, kullanıcının verdiğiniz seçeneklerden birini seçmesi önerilir, ancak aslında girdiye istediği her şeyi girebilir. -->
+      <br />
+
+      <!--! TEXTAREA -->
+
+      <div>
+        <label for="yorum">Yorumlarını gir</label>
+        <textarea
+          name="yorum"
+          id="yorum"
+          cols="10"
+          rows="10"
+          style="resize: none"
+          maxlength="100"
+        ></textarea>
+      </div>
+
+      <br />
+      <div>
+        <input type="submit" value="Gonder" />
+        <input type="reset" />
+        <input type="button" value="kaydet" />
       </div>
     </form>
   </body>

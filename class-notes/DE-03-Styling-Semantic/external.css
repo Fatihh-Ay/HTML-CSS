@@ -1,0 +1,32 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    color: blue;
+}
+#par{
+    color: aqua;
+}
+.center p span{
+    background-color: red;
+}
+
+
+/* ************** */
+
+.center p{
+    color: coral;
+}
+/* ustteki yazim center in cocuk ve torun butun p lerini etkiler */
+.center > p{
+    background-color: yellow;
+}
+/* ustteki yazim center in sadece cocugu olan  p yi etkiler. */
+.secici ~ a {
+    background-color: orange;
+}
+/* ustteki yazim secici div inden sonraki tum a lari al demek */
+.secici + a{
+    background-color: lightblue;
+}
+/* ustteki yazimda da sadece ilk a yi al demek */
