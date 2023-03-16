@@ -1,0 +1,58 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    /* background-image: url(../assets/winter2.webp); */
+}
+h1{
+    /* hue:renk tonu, saturation:rengin yoğunluğu belirginliği, lightness:hafiflik ışık */
+    color: hsla(0, 100%, 50%, 0.699);
+/* r: red, g:green, b:blue. isteğe bağlı a :alpha=saydamlık kullanılabilir */
+    /* color: #f63232;  */
+    /* red yerine üstteki hex kodunu kullanabiliriz */
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: overline;
+/* line-through=yazının üstünü çizmek,underline=altını, overline=üstünü */
+
+/* dashed=kesik çizgi,dotted=nokta nokta, double=iki çizgi,wavy=dalga  */
+    text-decoration-style: dashed;
+    text-decoration-style: dotted;
+    text-decoration-style: double;
+    text-decoration-style: wavy;
+
+    text-decoration-color: green;
+
+    text-decoration: blue underline overline 10px wavy;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    word-spacing: 50px;
+    /* iki kelime arasi bosluk */
+    letter-spacing: 5px;
+    /* harfler arasi bosluk */
+}
+p{
+    text-indent: 40px;
+    /* paragraf basi bosluk */
+    line-height: 30px;
+    /* satirlar arasi bosluk */
+}
+li{
+    background-color:lightgreen ;
+}
+ul{
+    list-style-position:inside ;
+    /* ul nin noktalarini iceri iter */
+/* image ile yaparsak type ile yapilandan daha baskin olur */
+    list-style-image: url(../assets/img/arrow-right-long-solid.svg);
+    list-style-type: "💓";
+    list-style-type: disc;
+}
+h3{
+    text-align: right;
+    /* sagdan sola dogru yaziyor (right to left)*/
+    direction: rtl;  
+}
