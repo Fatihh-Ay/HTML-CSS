@@ -1,44 +1,57 @@
-*{
-    margin: 0;
-    padding :0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: xx-large;
 }
-.div1{
-    background-color: gray;
-    height: 8rem;
-    width: 10rem;
-    
+.div1 {
+  background-color: gray;
+  width: 10rem;
+  height: 12rem;
+  position: relative;
 }
-.div2{
-    background-color: orange;
-    height: 8rem;
-    width: 2rem;
+.div2 {
+  background-color: darkorange;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 12rem;
 }
-.div2 > h3{
-    background-color: red;
-    display: inline-block;
-    line-height: 40px;
-    width: 2rem;
+#ilk {
+  background-color: rgb(80, 53, 20);
+  height: 2rem;
 }
-.div3{
-    background-color: orange;
-    height: 8rem;
-    width: 7.8rem;
-    display: none;
+#ilk i {
+  position: absolute;
+  left: 20px;
+  top: 30px;
 }
-
-.div2:hover .div3{
-    margin-top: -2.5rem;
-    display: block;
+.div3 {
+  background-color: darkorange;
+  position: absolute;
+  height: 12rem;
+  width: 8rem;
+  display: none;
 }
-
-.div3 h3{
-    text-align: center;
-    background-color: red;
-    display: inline-block;
-    line-height: 40px;
-    width: 7.8rem;
+#ikinci {
+  background-color: rgb(80, 53, 20);
+  height: 2rem;
+  color: white;
+  text-align: center;
+  padding: 14px;
 }
-li{
-    list-style-type: none;
-
+.div3 i {
+  color: black;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+ul {
+  list-style-type: none;
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+.div2:hover ~ .div3 {
+  display: inline-block;
 }
