@@ -4,18 +4,44 @@
     margin:2rem auto;
     width: 50vw;
 }
+.yazi1{
+    background-color: yellowgreen;
+    transform: rotateX(150deg);
+}
+.yazi2{
+    background-color: rgb(192, 105, 159);
+    transform: rotateY(180deg);
+}
+.yazi3{
+    background-color: rgb(137, 185, 212);
+    transform: rotateZ(10deg);
+}
+.yazi4{
+    background-color: rgb(137, 185, 212);
+}
+.yazi4:hover{
+ transform: scale(2,0.5);
+}
 
 
 
 
-/* 
 .box{
     background-color: crimson;
     width: 100px;
     font-weight: 800;
     height: 50px;
-} */
+}
 
+.x:hover{
+    transform: translateX(50px);
+}
+.y:active{
+    transform: translateY(100px);
+}
+.xy:active{
+    transform: translateY(150px,150px);
+}
 
 /* .btn-div{
     text-align: center;

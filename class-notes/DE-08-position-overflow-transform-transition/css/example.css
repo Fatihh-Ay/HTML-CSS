@@ -33,10 +33,27 @@
   .avatar {
     width: 50px;
   }
-
-/* 
-  -----new codes will be written here -----  */
-
+.comments-container{
+  background-color: black;
+  color: white;
+}
+.comment-left{
+  width: 60%;
+}
+.comment-header{
+  position: relative;
+  left: 20px;
+}
+.comments{
+  margin: 1rem;
+  border-top-left-radius: 18px;
+}
+.dark{
+  background-color: rgb(10, 57, 45);
+}
+.light{
+  border: 2px solid rgb(10, 57, 45);
+}
 
   label {
     color: white;
