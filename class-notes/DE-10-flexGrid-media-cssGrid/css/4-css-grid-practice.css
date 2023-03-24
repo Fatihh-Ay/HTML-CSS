@@ -1,0 +1,54 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /*! grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-rows: repeat(4,15vh) 15vh 15vh;
+    /* parantezden sonrakiler tasan kutular icin */
+    gap: 10px 15px;
+}
+.parca{
+    background-color: yellowgreen;
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parca1{
+    background-color: pink;
+    /*! 1.sutundan baslayip 3. sutuna kadar demek icin asagidaki gibi */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.parca4{
+    background-color: orange;
+    /*! 2.row dan 4.row a kadar */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.parca6{
+    background-color: orchid;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    /*! kisa yolu altta */
+    grid-area: 2/3/ span 2/ span 2;
+    /* baslangic row/ baslangic colum/ row da kac tane/ column da kac tane */
+
+}
+.parca8{
+ background-color:yellow;
+ /* grid-row:5; */
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.parca9{
+    background-color: aqua;
+    /* grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column: 3; */
+    grid-area: 4/3/ span 2/ span 1;
+}
