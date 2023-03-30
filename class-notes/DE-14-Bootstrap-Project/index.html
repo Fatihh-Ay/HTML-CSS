@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./app.css">
 </head>
 <body>
-    <!--! NAVBAR -->
+<!--! NAVBAR -->
     <nav class="navbar navbar-expand-md bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./img/CLARUSWAY_LOGO.png" alt=""></a>
@@ -48,15 +48,15 @@
           </div>
         </div>
       </nav>
-      <!--! CAROUSEL-CAPTIONS -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<!--! CAROUSEL-CAPTIONS -->
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner" data-bs-interval="3000">
-    <!-- her resim 3 saniyede bir otomatik degisecek, resimlerin en dis div ine interval verdik -->
+    <!--! her resim 3 saniyede bir otomatik degisecek, resimlerin en dis div ine interval verdik -->
           <div class="carousel-item active">
             <img src="./img/slider1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
@@ -88,12 +88,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- SECTION-ABOUT kendimiz yazacagiz, bootstrap in responsive ini kullanacagiz-->
+      <!--! SECTION-ABOUT kendimiz yazacagiz, bootstrap in responsive ini kullanacagiz-->
       <section id="about" class="container bg-light ">
         <article class="p-3 text-center">
             <h2>ABOUT US</h2>
             <div class="row d-flex justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-5">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <i class="fas fa-globe-americas fa-2x"></i>
                     <h4>Online Courses</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, veritatis.</p>
@@ -103,7 +103,7 @@
                     <h4>Full-Time Mentoring</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita praesentium dignissimos quasi?</p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <i class="fas fa-book-open fa-2x"></i>
                     <h4>Learn Yourself</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias atque reiciendis voluptatem illo.</p>
@@ -112,18 +112,191 @@
 
         </article>
 
-
-
-
-
-
-        <article></article>
-
-
-
-
-
+ <!--! INSTRUCTORS -->
+        <!-- ********************************************** -->
+        <article id="instructors" class="bg-dark p-3 text-center">
+            <h2 class="text-danger">OUR INSTRUCTORS</h2>
+            <div class="row g-3 d-flex justify-content-center">
+                <!--! 6 tane col card yazdik -->
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <!--! bootstrap dan card yapisini yapistirdik -->
+                    <div class="card" >
+                        <img src="./img/teacher1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <!--! icon lar ekledik, stilleri css de -->
+                          <div class="social d-flex justify-content-evenly">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card" >
+                        <img src="./img/teacher2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="social d-flex justify-content-evenly">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card" >
+                        <img src="./img/teacher3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="social d-flex justify-content-evenly">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card" >
+                        <img src="./img/teacher4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="social d-flex justify-content-evenly">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card" >
+                        <img src="./img/teacher5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="social d-flex justify-content-evenly">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="card" >
+                        <img src="./img/teacher6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="social d-flex justify-content-evenly">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </article>
       </section>
+<!--! STUDENTS -->
+      <section id="students" class="text-center container p-4"> 
+        <h2 class="text-danger">OUR STUDENTS</h2>
+        <div class="row g-3 d-flex align-items-center">
+            <div class="col-sm-12 col-md-6 ">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis facere maxime, provident ipsum odio vero soluta recusandae consequatur nisi repellendus?</p>
+            <button class="btn btn-danger">Learn More</button>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img src="./img/students1.png" alt="" width="60%">
+            </div>
+        </div>
+      </section>
+<!--! COURSES -->
+<!-- ************************************************** -->
+<!--! NAVS-TABS-javascript-behaviour 2.sini aldik -->
+<section id="courses" class="container bg-dark p-4 text-center">
+    <h2 class="text-danger">COURSES</h2>
+
+    <!--! nav-tabs olan butonlarin stillerini nav-pills ile degistirdik -->
+    <nav>
+        <div class="nav nav-pills" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Full-Stack</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Data-Science</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">DevOps</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+         <!-- tab-content=görünen resimler kadar container,yazmazsak bütün resimler için boş siyah yer yapar -->
+          <!-- show active=ilk div e yazılır, ilk seçili course daki resimleri görünür hale getirmek için -->
+          <!-- tab-pane fade= seçilen course dışındaki resimler gorunmesin, sadece seçilen kursun resimleri görünsün. tab-content ile yukarıda dediğimiz sadece gorunen contenti sarmalliyor -->
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <!--! responsive lik icin resimleri row div i ve col div leri ile sarmalladik -->
+            <!--! img-thumbnail resimleri bulundugu div e gore ayarlar ve beyaz border verir -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <a href="./img/thumbnail/fs1.jpg"><img class="img-thumbnail" src="./img/thumbnail/fs1.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/fs2.jpg"><img class="img-thumbnail" src="./img/thumbnail/fs2.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/fs3.jpg"><img class="img-thumbnail" src="./img/thumbnail/fs3.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/fs4.jpg"><img class="img-thumbnail" src="./img/thumbnail/fs4.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <a href="./img/thumbnail/ds1.jpg"><img class="img-thumbnail" src="./img/thumbnail/ds1.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/ds2.jpg"><img class="img-thumbnail" src="./img/thumbnail/ds2.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/ds3.jpg"><img class="img-thumbnail" src="./img/thumbnail/ds3.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/ds4.jpg"><img class="img-thumbnail" src="./img/thumbnail/ds4.jpg" alt=""></a>
+                </div>
+            </div> 
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <a href="./img/thumbnail/ops1.jpg"><img class="img-thumbnail" src="./img/thumbnail/ops1.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/ops2.jpg"><img class="img-thumbnail" src="./img/thumbnail/ops2.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/ops3.jpg"><img class="img-thumbnail" src="./img/thumbnail/ops3.jpg" alt=""></a>
+                </div>
+                <div class="col">
+                    <a href="./img/thumbnail/ops4.jpg"><img class="img-thumbnail" src="./img/thumbnail/ops4.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+</section>
 
 
 
