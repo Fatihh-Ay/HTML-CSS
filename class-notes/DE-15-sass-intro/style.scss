@@ -120,3 +120,34 @@ header{
         @include myBox(magenta, yellow);
     }
 }
+
+// ********** ARTICLES ******* /
+//! ********** @EXTEND ******** /
+
+.articles{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    .article1{
+        background-color: gray;
+        width: 50%;
+        height: 10rem;
+        border-radius: 10px;
+        border: 2px solid red;
+    }
+    .article2{
+        @extend .article1;
+        background-color: hotpink;
+        border-color: black;
+    }
+}
+
+
+
+// ************* FOOTER ************** /
+footer{
+    $dark:1;
+    p{
+        @id Condition
+    }
+}
