@@ -145,9 +145,39 @@ header{
 
 
 // ************* FOOTER ************** /
+//! ******* IF-IF ELSE *********** /
+//! ******* FOR *********** /
+
 footer{
-    $dark:1;
+    $dark:3;
     p{
-        @id Condition
+        @if $dark==1{
+            background-color:darkorange;
+        }
+        @else if $dark==2{
+            background-color:gray;
+        }
+        @else{
+            background-color:magenta;
+        }
     }
+}
+
+
+.social-icons{
+    display: flex;
+    height: 10rem;
+    $textColor: #990000, #55004E, #0FA8A1, #121456, red;
+
+    @for $i from 1 through 5{
+        .social#{$i}{
+            width: 20%;
+            background-color: blue;
+            font-size: $i*1rem;
+            color: nth($textColor , $i );
+            background-color: lighten( blue, 5*$i);
+        }
+    }
+
+
 }

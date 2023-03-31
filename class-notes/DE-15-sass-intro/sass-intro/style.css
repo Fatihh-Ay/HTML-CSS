@@ -102,4 +102,65 @@ header ul li:hover a {
   border-radius: 10px;
 }
 
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.articles .article1, .articles .article2 {
+  background-color: gray;
+  width: 50%;
+  height: 10rem;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+.articles .article2 {
+  background-color: hotpink;
+  border-color: black;
+}
+
+footer p {
+  background-color: magenta;
+}
+
+.social-icons {
+  display: flex;
+  height: 10rem;
+}
+.social-icons .social1 {
+  width: 20%;
+  background-color: blue;
+  font-size: 1rem;
+  color: #990000;
+  background-color: #1a1aff;
+}
+.social-icons .social2 {
+  width: 20%;
+  background-color: blue;
+  font-size: 2rem;
+  color: #55004E;
+  background-color: #3333ff;
+}
+.social-icons .social3 {
+  width: 20%;
+  background-color: blue;
+  font-size: 3rem;
+  color: #0FA8A1;
+  background-color: #4d4dff;
+}
+.social-icons .social4 {
+  width: 20%;
+  background-color: blue;
+  font-size: 4rem;
+  color: #121456;
+  background-color: #6666ff;
+}
+.social-icons .social5 {
+  width: 20%;
+  background-color: blue;
+  font-size: 5rem;
+  color: red;
+  background-color: #8080ff;
+}
+
 /*# sourceMappingURL=style.css.map */
