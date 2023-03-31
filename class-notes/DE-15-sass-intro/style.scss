@@ -87,3 +87,36 @@ header{
         max-width: 400px;
     }
 }
+
+
+//******** CARDS ********* /
+//! ******* MIXIN **********/
+
+
+@mixin myBox($backColor, $color){
+    background-color: $backColor;
+    color: $color;
+    width: 25%;
+    height: 15rem;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.cards{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.8rem;
+
+    .card1{
+        @include myBox(darkorange, yellow);
+    }
+    .card2{
+        @include myBox(blue, yellow);
+    }
+    .card3{
+        @include myBox(yellow, blue);
+    }
+    .card4{
+        @include myBox(magenta, yellow);
+    }
+}

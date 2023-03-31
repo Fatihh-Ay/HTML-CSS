@@ -64,4 +64,42 @@ header ul li:hover a {
   max-width: 400px;
 }
 
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+.cards .card1 {
+  background-color: darkorange;
+  color: yellow;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.cards .card2 {
+  background-color: blue;
+  color: yellow;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.cards .card3 {
+  background-color: yellow;
+  color: blue;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.cards .card4 {
+  background-color: magenta;
+  color: yellow;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
